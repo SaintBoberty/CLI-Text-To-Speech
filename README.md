@@ -85,6 +85,24 @@ python Text-To-Speech.py -f TXT.txt -v gb-male
 
 python Text-To-Speech.py -f TXT.txt -v gb-male -r +30%
 
+# IMPORTANT DEPENDENCIES!!
+These are the dependencies required for this program to even run at all, DO NOT FORGET.
+
+## PIP PACKAGES
+GTTS (Google Text To Speech Libraries)
+
+Edge-TTS 
+
+Pyttsx3
+
+## Linux System Dependencies
+
+xdg-utils
+
+espeak
+
+
+
 
 
 
