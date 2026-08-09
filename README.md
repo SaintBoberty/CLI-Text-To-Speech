@@ -31,15 +31,15 @@ Ensure you have a valid internet connection, it is needed for the audio files to
 
 # Voices
 
-gb-male
+gb-male(Britsh guy voice)
 
-gb-female
+gb-female(British woman voice)
 
-us-male
+us-male(American dude)
 
-us-female
+us-female(American Woman)
 
-au-male
+au-male(Australian Guy)
 
 All voices are taken from the Google Text To Speech Library.
 
