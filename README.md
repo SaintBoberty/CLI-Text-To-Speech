@@ -15,7 +15,7 @@ Ensure you have a valid internet connection, it is needed for the audio files to
 
 
 # Commands
-"-h" or "--help"
+"-h" or "--help" (Gives you useful info on how each command works.)
 
 "-t" or "--text" (Stores the string to convert into audio)
 
