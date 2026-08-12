@@ -1,4 +1,4 @@
-# CLI Text To Speech <REALISM UPDATE>
+# CLI Text To Speech (REALISM UPDATE)
 
 More voices have been added, with improved speech and hyper realism.
 
