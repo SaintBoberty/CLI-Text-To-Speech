@@ -33,17 +33,41 @@ Ensure you have a valid internet connection, it is needed for the audio files to
 
 # Voices
 
-gb-male(Britsh guy voice)
+ # --- Hyper-Realistic / Multilingual (Top Tier) ---
+    "ava": "en-US-AvaMultilingualNeural",
+    "andrew": "en-US-AndrewMultilingualNeural",
+    "brian": "en-US-BrianMultilingualNeural",
+    "emma": "en-US-EmmaMultilingualNeural",
 
-gb-female(British woman voice)
+    # --- US Accents ---
+    "us-aria": "en-US-AriaNeural",          # Expressive / Conversational
+    "us-guy": "en-US-GuyNeural",            # Deep / Casual
+    "us-jenny": "en-US-JennyNeural",        # Natural / Narrative
+    "us-chris": "en-US-ChristopherNeural",  # Energetic
+    "us-steffan": "en-US-SteffanNeural",    # Storyteller / Smooth
 
-us-male(American dude)
+    # --- UK Accents ---
+    "uk-ryan": "en-GB-RyanNeural",          # Clear / Professional
+    "uk-sonia": "en-GB-SoniaNeural",        # Calm / Warm
+    "uk-thomas": "en-GB-ThomasNeural",      # Deep British
+    "uk-maisie": "en-GB-MaisieNeural",      # Casual British
 
-us-female(American Woman)
+    # --- Australian Accents ---
+    "au-natasha": "en-AU-NatashaNeural",
+    "au-william": "en-AU-WilliamNeural",
 
-au-male(Australian Guy)
+    # --- Canadian Accents ---
+    "ca-clara": "en-CA-ClaraNeural",
+    "ca-liam": "en-CA-LiamNeural",
 
-All voices are taken from the Google Text To Speech Library.
+    # --- Irish & South African ---
+    "ie-emily": "en-IE-EmilyNeural",
+    "ie-connor": "en-IE-ConnorNeural",
+    "za-leah": "en-ZA-LeahNeural",
+
+    # --- Indian English ---
+    "in-neerja": "en-IN-NeerjaNeural",
+    "in-prabhat": "en-IN-PrabhatNeural",
 
 
 # Usage
