@@ -12,8 +12,41 @@ Windows: cd /d C:\Users\(YOUR_USER)\Downloads\Text-To-Speech\Audio
 
 MacOS: cd ~/Downloads/Text-To-Speech/Audio
 
-Ensure you have a valid internet connection, it is needed for the audio files to be output.
 
+# System & Environment Requirements
+
+Python 3.8+: Required for asyncio and modern package support.
+
+Active Internet Connection: edge-tts streams speech online from Microsoft Azure's neural engine.
+
+xdg-utils (Linux): Provides xdg-open to automatically play output audio files with your default media player.
+
+Python Packages:
+
+edge-tts (only external dependency)
+
+Built-in standard library packages: argparse, asyncio, os, subprocess, sys
+
+
+# IMPORTANT DEPENDENCIES!!
+
+## 1. Create and activate virtual environment
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+## 2. Upgrade pip and install edge-tts
+
+pip install --upgrade pip
+
+pip install edge-tts
+
+## 3. Install xdg-utils (Linux only, if not already installed)
+
+sudo dnf install xdg-utils (Fedora)
+
+sudo apt install xdg-utils (Ubuntu/Debian)
 
 
 # Commands
@@ -33,41 +66,62 @@ Ensure you have a valid internet connection, it is needed for the audio files to
 
 # Voices
 
- # --- Hyper-Realistic / Multilingual (Top Tier) ---
-    "ava": "en-US-AvaMultilingualNeural",
-    "andrew": "en-US-AndrewMultilingualNeural",
-    "brian": "en-US-BrianMultilingualNeural",
-    "emma": "en-US-EmmaMultilingualNeural",
+ ## -- Realistic voices --
+ ava 
+    
+ andrew
+    
+ brian
+ 
+ emma
 
-    # --- US Accents ---
-    "us-aria": "en-US-AriaNeural",          # Expressive / Conversational
-    "us-guy": "en-US-GuyNeural",            # Deep / Casual
-    "us-jenny": "en-US-JennyNeural",        # Natural / Narrative
-    "us-chris": "en-US-ChristopherNeural",  # Energetic
-    "us-steffan": "en-US-SteffanNeural",    # Storyteller / Smooth
+ ## --- US Accents ---
+ 
+ us-aria
+ 
+ us-guy
+ 
+ us-jenny
+ 
+ us-chris
+ 
+ us-steffan
 
-    # --- UK Accents ---
-    "uk-ryan": "en-GB-RyanNeural",          # Clear / Professional
-    "uk-sonia": "en-GB-SoniaNeural",        # Calm / Warm
-    "uk-thomas": "en-GB-ThomasNeural",      # Deep British
-    "uk-maisie": "en-GB-MaisieNeural",      # Casual British
+ ## --- UK Accents ---
+ 
+ uk-ryan
+ 
+ uk-sonia
+ 
+ uk-thomas
+ 
+ uk-maisie
 
-    # --- Australian Accents ---
-    "au-natasha": "en-AU-NatashaNeural",
-    "au-william": "en-AU-WilliamNeural",
+ ## --- Australian Accents ---
+ 
+ au-natasha
+ 
+ au-william
 
-    # --- Canadian Accents ---
-    "ca-clara": "en-CA-ClaraNeural",
-    "ca-liam": "en-CA-LiamNeural",
+ ## --- Canadian Accents ---
+ 
+ ca-clara
+ 
+ ca-liam
 
-    # --- Irish & South African ---
-    "ie-emily": "en-IE-EmilyNeural",
-    "ie-connor": "en-IE-ConnorNeural",
-    "za-leah": "en-ZA-LeahNeural",
+ ## --- Irish & South African ---
+ 
+ ie-emily
+ 
+ ie-connor
+ 
+ za-leah
 
-    # --- Indian English ---
-    "in-neerja": "en-IN-NeerjaNeural",
-    "in-prabhat": "en-IN-PrabhatNeural",
+ ## --- Indian English ---
+ 
+ in-neerja
+ 
+ in-prabhat
 
 
 # Usage
@@ -77,11 +131,11 @@ python Text-To-Speech.py -t "Type whatever you want in here" -o Name-This-Whatev
 
 ## If you want to change the voice add the -v or --voice command:
 
-python Text-To-Speech.py -t "Type whatever you want in here" -v us-male -o Name-This-Whatever-You-Want.mp3
+python Text-To-Speech.py -t "Type whatever you want in here" -v brian -o Name-This-Whatever-You-Want.mp3
 
 ## If you want to increase or decrease the speed of the voice add the -r or --rate command:
 
-python Text-To-Speech.py -t "Type whatever you want in here" -v us-male -r +20 -o Name-This-Whatever-You-Want.mp3
+python Text-To-Speech.py -t "Type whatever you want in here" -v ava -r +20 -o Name-This-Whatever-You-Want.mp3
 
 # Interactive Mode
 To use the interactive mode simply type:
@@ -92,11 +146,11 @@ In order to exit type exit or quit.
 
 ## Change the interactive mode voice by adding the -v or --voice command.
 
-python Text-To-Speech.py -i -v us-female
+python Text-To-Speech.py -i -v uk-guy
 
 ## Increase or Decrease the interactive mode voice speed by adding the -r or --rate command
 
-python Text-To-Speech.py -i -v au-male -r -10%
+python Text-To-Speech.py -i -v ca-liam -r -10%
 
 # File Reading Mode
 To convert the text from a text file into audio first put the text file you would like to be read out in the Audio folder. and proceed to type the following in your terminal:
@@ -105,27 +159,12 @@ python Text-To-Speech.py -f TXT.txt
 
 ## To change the file reading voice.
 
-python Text-To-Speech.py -f TXT.txt -v gb-male
+python Text-To-Speech.py -f TXT.txt -v za-leah
 
 ## To change the rate.
 
-python Text-To-Speech.py -f TXT.txt -v gb-male -r +30%
+python Text-To-Speech.py -f TXT.txt -v ie-connor -r +30%
 
-# IMPORTANT DEPENDENCIES!!
-These are the dependencies required for this program to even run at all, DO NOT FORGET.
-
-## PIP PACKAGES
-GTTS (Google Text To Speech Libraries)
-
-Edge-TTS 
-
-Pyttsx3
-
-## Linux System Dependencies
-
-xdg-utils
-
-espeak
 
 
 
